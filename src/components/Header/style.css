@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header {
+    background-color: black;
+    height: 46px;
+    /* position: fixed; */
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    /* overflow: hidden; */
+}
+/* .nav> li  trỏ đến menu cấp 1*/
+.nav > li {
+    display: inline-block;
+}
+.nav {
+    display: inline-block;
+}
+
+.nav,
+.subnav {
+    list-style-type: none;
+}
+
+.nav li {
+    position: relative;
+}
+
+.nav > li > a {
+    color: white;
+    text-transform: uppercase;
+}
+
+.nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+.nav li:hover .subnav {
+    display: block;
+}
+
+.nav > li:hover > a,
+.nav .subnav li:hover {
+    color: black;
+    background-color: #ccc;
+}
+
+.nav .subnav {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    min-width: 160px;
+}
+
+.nav .subnav a {
+    color: black;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+.nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+.header .menu-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+.header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+.header .search-btn {
+    float: right;
+    padding: 0 21px;
+    cursor: pointer;
+}
+
+.header .search-btn:hover {
+    background-color: #ccc !important;
+}

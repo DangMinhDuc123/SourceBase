@@ -1,0 +1,4 @@
+cài đặt
+npm install --save styled-components
+
+để quản lý các theme dùng chung
